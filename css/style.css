@@ -45,7 +45,7 @@ header {
 }
 
 .header-search {
-    width: 85%;
+    flex-grow: 1;
 }
 
 .header-icons {
@@ -66,6 +66,7 @@ header {
 
 .container-flex {
     display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -102,7 +103,6 @@ nav ul li i {
 }
 
 
-
 main {
     width: calc(100% - 110px);
     height: calc(100vh - 50px);
@@ -112,9 +112,61 @@ main {
 }
 
 .main-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    background-color: green;
-    border: 2px solid black;
+    background-color: #1B72E8;
+    height: 100px;
+    color: #fff;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.main-top-left {
+    flex-grow: 1;
+}
+
+.main-top h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.main-top-left h2 {
+    display: inline-block;
+}
+
+.main-top a {
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #165BBA;
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+
+.main-top-right {
+    width: 30%;
+}
+
+.links-main-top {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    font-size: 0.8rem;
+    /* padding-top: 10px; */
+}
+
+.link-desktop {
+    display: block;
+}
+
+.link-mobile {
+    display: none;
+}
+
+.link-mobile a {
+    border-radius: 50%;
+    padding: 3px 7px;
 }
 
 .main-left, .main-right {
@@ -127,7 +179,7 @@ main {
     min-height: 100px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
     #logo {
         padding-left: 10px;
     }
@@ -167,5 +219,21 @@ main {
 
     nav ul li span {
         display: none;
+    }
+
+    .main-top {
+        height: 150px;
+    }
+
+    .link-desktop {
+        display: none;
+    }
+
+    .link-mobile {
+        display: block;
+    }
+
+    .main-top-right {
+        width: 100%;
     }
 } 
