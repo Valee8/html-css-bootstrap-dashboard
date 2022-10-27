@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
 header {
     height: 40px;
-    background-color: blueviolet;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-flex {
