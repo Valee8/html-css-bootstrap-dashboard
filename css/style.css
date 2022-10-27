@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    height: 40px;
+    background-color: blueviolet;
+}
+
+.container-flex {
+    display: flex;
+}
+
+nav {
+    width: 90px;
+    height: calc(100vh - 40px);
+    background-color: blue;
+}
+
+main {
+    width: calc(100% - 90px);
+    height: calc(100vh - 40px);
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-top {
+    width: 100%;
+    background-color: green;
+    border: 2px solid black;
+}
+
+.main-left, .main-right {
+    width: 50%;
+}
+
+.main-left section, .main-right section {
+    background-color: green;
+    border: 2px solid black;
+    min-height: 100px;
+}
