@@ -437,7 +437,8 @@ main {
     font-weight: normal;
 }
 
-@media all and (max-width: 855px) {
+
+@media all and (max-width: 992px) {
 
     .header-icons {
         padding-right: 5px;
@@ -493,14 +494,19 @@ main {
     }
 } 
 
-@media all and (min-width: 855px) and (max-width: 1020px) {
-
-    .main-bottom .main-left {
-        width: 58%;
+@media all and (max-width: 530px) {
+    #next-classes .list-section li:nth-child(3) {
+        display: none;
     }
 
-    .main-bottom .main-right {
-        width: 42%;
+    #next-classes .list-section li {
+        min-width: 20%;
     }
+}
 
-}  
+@media all and (max-width: 732px) {
+    #next-classes .list-section li:nth-child(2) {
+        display: none;
+
+    }
+}
