@@ -136,7 +136,18 @@ nav {
 }
 
 nav a {
+    align-self: center;
     color: #fff;
+    display: block;
+    height: 30px;
+    width: auto;
+    line-height: 30px;
+    padding: 0 8px;
+}
+
+nav a:hover {
+    background-color: #858f9b;
+    
 }
 
 .menu-nav-top {
@@ -148,7 +159,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 6px 0;
+    padding: 4px 0;
 }
 
 nav ul li i {
@@ -190,6 +201,10 @@ main {
     background-color: rgba(0, 0, 0, .2);
     padding: 3px 5px;
     border-radius: 20px;
+}
+
+.main-top a:hover {
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .main-top-right {
@@ -274,6 +289,11 @@ main {
     font-size: 1.4rem;
 }
 
+.plus-button:hover {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
 /* Liste sezioni */
 .list-section {
     list-style-type: none;
@@ -322,6 +342,11 @@ main {
     border: 1px solid #6c757d;
     border-radius: 3px;
     padding: 6px;
+}
+
+#next-classes .list-section li i:hover {
+    background-color: #6c757d;
+    color: #fff;
 }
 
 #next-classes .list-section li span {
