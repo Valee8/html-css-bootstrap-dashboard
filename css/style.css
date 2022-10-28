@@ -315,6 +315,10 @@ main {
     text-align: center;
 }
 
+#next-classes .list-section:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
 #next-classes .list-section .name-class {
     text-align: left;
     flex-grow: 1;
@@ -344,7 +348,7 @@ main {
     padding: 6px;
 }
 
-#next-classes .list-section li i:hover {
+#next-classes .list-section li:not(.name-class) i:hover {
     background-color: #6c757d;
     color: #fff;
 }
@@ -410,6 +414,10 @@ main {
     padding: 12px;
 }
 
+#todo .list-section li input {
+    vertical-align: middle;
+}
+
 #graph .list-section li:last-child {
     border-bottom: 0;
 }
@@ -418,8 +426,9 @@ main {
     padding: 10px 0;
 }
 
-#todo .list-section li input {
-    vertical-align: middle;
+#graph a {
+    color: #0d6efd;
+    text-decoration: underline;
 }
 
 .list-section h4 {
