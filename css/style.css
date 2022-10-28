@@ -325,18 +325,36 @@ h2 {
     display: block;
 }
 
-#todo .list-section {
+#todo {
+    padding: 10px;
+}
+
+#todo .list-section, #graph .list-section {
     border: 1px solid #e0e3e7;
     border-radius: 3px;
 }
 
-#todo .list-section li {
+#todo .list-section li, #graph .list-section li {
     border-bottom: 1px solid #e0e3e7;
     padding: 12px;
 }
 
+#graph .list-section li:last-child {
+    border-bottom: 0;
+}
+
+#graph {
+    padding: 10px 0;
+}
+
 #todo .list-section li input {
     vertical-align: middle;
+}
+
+.list-section h4 {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    font-weight: normal;
 }
 
 
