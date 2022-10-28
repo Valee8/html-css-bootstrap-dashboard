@@ -216,6 +216,18 @@ h2 {
     font-size: 1.4rem;
 }
 
+.list-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list-section li {
+    width: 20%;
+}
+
 
 @media all and (max-width: 768px) {
 
