@@ -218,19 +218,18 @@ main {
     font-size: 0.8rem;
 }
 
-.link-desktop {
+.links-main-desktop {
     display: block;
 }
 
-.link-mobile {
+.link-main-mobile {
     display: none;
 }
 
-.link-mobile a {
+.link-main-mobile a {
     border-radius: 50%;
     padding: 3px 7px;
 }
-
 
 /* Sezioni in basso */
 .main-bottom {
@@ -437,7 +436,6 @@ main {
     font-weight: normal;
 }
 
-
 @media all and (max-width: 992px) {
 
     /* Header */
@@ -481,11 +479,11 @@ main {
         height: 150px;
     }
 
-    .link-desktop {
+    .links-main-desktop {
         display: none;
     }
 
-    .link-mobile {
+    .link-main-mobile {
         display: block;
     }
 
@@ -499,7 +497,7 @@ main {
 } 
 
 @media all and (max-width: 530px) {
-    
+
     /* Sezione Prossime classi */
     #next-classes .list-section li:nth-child(3) {
         display: none;
