@@ -325,6 +325,20 @@ h2 {
     display: block;
 }
 
+#todo .list-section {
+    border: 1px solid #e0e3e7;
+    border-radius: 3px;
+}
+
+#todo .list-section li {
+    border-bottom: 1px solid #e0e3e7;
+    padding: 12px;
+}
+
+#todo .list-section li input {
+    vertical-align: middle;
+}
+
 
 @media all and (max-width: 855px) {
 
