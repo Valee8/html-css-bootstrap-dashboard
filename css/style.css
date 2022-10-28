@@ -69,6 +69,7 @@ header {
 .container-flex {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 nav {
@@ -108,8 +109,7 @@ nav ul li i {
 main {
     width: calc(100% - 110px);
     height: calc(100vh - 50px);
-    display: flex;
-    flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .main-top {
@@ -140,7 +140,7 @@ h2 {
 .main-top a {
     color: #fff;
     font-size: 0.8rem;
-    background-color: #165BBA;
+    background-color: rgba(0, 0, 0, .2);
     padding: 3px 5px;
     border-radius: 20px;
 }
@@ -169,6 +169,11 @@ h2 {
     padding: 3px 7px;
 }
 
+.main-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .main-left, .main-right {
     width: 50%;
 }
@@ -176,10 +181,9 @@ h2 {
 .main-left section, .main-right section {
     border: 1px solid #d6d6d6;
     border-radius: 3px;
-    min-height: 100px;
 }
 
-section:not(.main-top) {
+.main-bottom section {
     margin: 10px;
 }
 
@@ -189,7 +193,7 @@ section:not(.main-top) {
     align-items: center;
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d6d6;
-    padding: 0 15px;
+    padding: 0 12px;
     border-radius: 3px 3px 0 0;
 }
 
@@ -204,18 +208,16 @@ section:not(.main-top) {
     border: 1px solid #0d6efd;
     border-radius: 5px;
     display: block;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
     margin: 7px 0;
     text-align: center;
     font-size: 1.4rem;
 }
 
+
 @media all and (max-width: 768px) {
-    #logo {
-        padding-left: 10px;
-    }
 
     .header-icons {
         padding-right: 5px;
@@ -263,6 +265,10 @@ section:not(.main-top) {
     }
 
     .main-top-right {
+        width: 100%;
+    }
+
+    .main-left, .main-right {
         width: 100%;
     }
 } 
