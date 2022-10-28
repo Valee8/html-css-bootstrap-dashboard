@@ -48,18 +48,24 @@ header {
 }
 
 /* Barra di ricerca */
-.input-search {
-    border: 0;
-    background-color: #E5E5E5;
-    padding: 8px;
-    border-radius: 3px;
-    width: 100%;
-
-}
-
 .header-search {
     flex-grow: 1;
     padding: 0 10px;
+    position: relative;
+}
+
+.input-search {
+    border: 0;
+    background-color: #E5E5E5;
+    padding: 8px 8px 8px 30px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.header-search i {
+    position: absolute;
+    top: 8px;
+    left: 17px;
 }
 
 /* Menu icone */
