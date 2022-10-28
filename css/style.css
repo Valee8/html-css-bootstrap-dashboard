@@ -174,8 +174,12 @@ h2 {
     flex-wrap: wrap;
 }
 
-.main-left, .main-right {
-    width: 50%;
+.main-left {
+    width: 65%;
+}
+
+.main-right {
+    width: 35%;
 }
 
 .main-left section, .main-right section {
@@ -185,6 +189,7 @@ h2 {
 
 .main-bottom section {
     margin: 10px;
+    padding-bottom: 15px;
 }
 
 .title-section {
@@ -216,20 +221,76 @@ h2 {
     font-size: 1.4rem;
 }
 
+
 .list-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style-type: none;
-    text-align: center;
+    border-bottom: 1px solid #e0e3e7;
+    margin: 0 10px;
+    padding: 6px 0;
 }
 
 .list-section li {
-    width: 20%;
+    min-width: 13%;
+}
+
+.list-section .name-class {
+    text-align: left;
+    flex-grow: 1;
+    min-width: 30%;
+    padding-left: 6px;
+}
+
+.list-section {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.list-section h3 {
+    font-size: 0.9rem;
+}
+
+.list-section .name-class i {
+    background-color: #f16551;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 6px 4px;
+    font-size: 1rem;
+    vertical-align: sub;
+    margin-right: 4px;
+    border: 0;
+}
+
+.list-section li i {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    border-radius: 3px;
+    padding: 6px;
 }
 
 
-@media all and (max-width: 768px) {
+.list-section li span {
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+.done {
+    background-color: #198754;
+}
+
+.failed {
+    background-color: #dc3545;
+}
+
+.process {
+    background-color: #ffc107;
+}
+
+
+@media all and (max-width: 855px) {
 
     .header-icons {
         padding-right: 5px;
@@ -284,3 +345,15 @@ h2 {
         width: 100%;
     }
 } 
+
+@media all and (min-width: 855px) and (max-width: 1020px) {
+
+    .main-bottom .main-left {
+        width: 58%;
+    }
+
+    .main-bottom .main-right {
+        width: 42%;
+    }
+
+}  
