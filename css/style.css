@@ -58,6 +58,34 @@ header {
     font-size: 0.8rem;
 }
 
+.header-icons .bell {
+    position: relative;
+}
+
+.header-icons .bell:hover .icons-dropdown {
+    display: block
+}
+
+.icons-dropdown {
+    list-style-type: none;
+    position: absolute;
+    left: auto;
+    margin-right: 0;
+    right: 0;
+    top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+    display: none;
+    z-index: 20;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.icons-dropdown li {
+    padding: 10px;
+}
+
 .header-icons i {
     color: #686565;
     vertical-align: middle;
@@ -273,7 +301,6 @@ h2 {
     padding: 6px;
 }
 
-
 #next-classes .list-section li span {
     padding: 2px 5px;
     border-radius: 5px;
@@ -323,10 +350,6 @@ h2 {
 
 .list-section > li:hover .list-faq-hover, .list-section > li:hover .icon-faq-hover {
     display: block;
-}
-
-#todo {
-    padding: 10px;
 }
 
 #todo .list-section, #graph .list-section {
